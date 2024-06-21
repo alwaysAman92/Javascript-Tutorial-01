@@ -27,19 +27,30 @@ const obj4=Object.assign({},obj1,obj2)
 
 const obj5={5:"a",6:"b"}
 const obj6=Object.assign({},obj1,obj2,obj5)
-console.log(obj6);
+//console.log(obj6);
 
 //using spread operator
 const obj7={...obj1,...obj2}
-console.log(obj7);
+//console.log(obj7);
 
 //if we define an array of objects than we can access each index
 const arr=[myuser={name:"Aman"},23,21,45]
-console.log(arr[0].name); //output-Aman
+//console.log(arr[0].name); //output-Aman
 
-console.log(appUser);
+/*console.log(appUser);
 console.log(Object.keys(appUser));
 console.log(Object.values(appUser));
 console.log(Object.entries(appUser));
 console.log(appUser.hasOwnProperty('isLoggedIn')); //output-true
+*/
+//destructuring of objects
 
+const course={
+    coursename:"javascript",
+    price: "999",
+    courseInstructor:"Hitesh"
+}
+
+//course.courseInstructor
+const {courseInstructor}=course //or const {courseInstructor: instructor}=course here name of key is changed
+console.log(courseInstructor);  //console.log(Instructor);
