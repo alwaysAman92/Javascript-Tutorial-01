@@ -43,7 +43,7 @@ console.log(Object.values(appUser));
 console.log(Object.entries(appUser));
 console.log(appUser.hasOwnProperty('isLoggedIn')); //output-true
 */
-//destructuring of objects
+//destructuring of objects-it is a way through which keys in an object can be accessed easily
 
 const course={
     coursename:"javascript",
